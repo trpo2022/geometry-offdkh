@@ -37,7 +37,7 @@ int main() {
       c.x = chisla(m3, &i);
       c.y = chisla(m3, &i);
       c.r = chisla(m3, &i);
-      printf("Circle: (%0.0f %0.0f) R = %0.2f\n", c.x, c.y, c.r);
+      printf("%c: (%0.0f %0.0f) R = %0.2f\n", m1, c.x, c.y, c.r);
     } else if (strncmp(m2, m3, R) == 0) {
       i = 9;
       tr.x1 = chisla(m3, &i);
@@ -46,7 +46,7 @@ int main() {
       tr.y2 = chisla(m3, &i);
       tr.x3 = chisla(m3, &i);
       tr.y3 = chisla(m3, &i);
-      printf("Triangle: (%0.0f %0.0f) (%0.0f %0.0f) (%0.0f %0.0f)\n", tr.x1,
+      printf("%c: (%0.0f %0.0f) (%0.0f %0.0f) (%0.0f %0.0f)\n", m2, tr.x1,
              tr.y1, tr.x2, tr.y2, tr.x3, tr.y3);
     } else {
       printf("Error\n");
