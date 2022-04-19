@@ -46,8 +46,13 @@ int main() {
       tr.y2 = chisla(m3, &i);
       tr.x3 = chisla(m3, &i);
       tr.y3 = chisla(m3, &i);
-      printf("%c: (%0.0f %0.0f) (%0.0f %0.0f) (%0.0f %0.0f)\n", m2, tr.x1,
-             tr.y1, tr.x2, tr.y2, tr.x3, tr.y3);
+      tr.x4 = chisla(m3, &i);
+      tr.y4 = chisla(m3, &i);
+        if ((tr.x1 == tr.x4) && (tr.y1 == tr.y4)) {
+          printf("%c: (%0.0f %0.0f) (%0.0f %0.0f) (%0.0f %0.0f)\n", m2, tr.x1,
+             tr.y1, tr.x2, tr.y2, tr.x3, tr.y3); }
+        else {
+       printf("Error\n")
     } else {
       printf("Error\n");
     }
